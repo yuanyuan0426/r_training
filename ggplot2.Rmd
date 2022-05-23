@@ -1,0 +1,20 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+library(readr)
+adae <- read_csv("https://rhoinc.github.io/data-library/data/clinical-trials/adam/adae.csv")
+View(adae)
+
+data viz
+```{r}
+library(ggplot2)
+
+ggplot(adae) +
+ aes(x = RACE, y = AGE) +
+ geom_boxplot(shape = "circle", fill = "#112446") +
+ theme_minimal()
+
+```
+
+
